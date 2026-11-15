@@ -49,7 +49,7 @@ Necesitas [Rust](https://rustup.rs) con el toolchain MSVC y las Build Tools de V
 winget install --id Microsoft.VisualStudio.2022.BuildTools -e --override "--quiet --wait --add Microsoft.VisualStudio.Workload.VCTools --includeRecommended"
 winget install --id Rustlang.Rustup -e
 # Reabre la terminal
-git clone https://github.com/<tu-usuario>/drawerly.git
+git clone https://github.com/Rhezm/drawerly.git
 cd drawerly
 cargo build --release
 ```
