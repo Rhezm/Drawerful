@@ -1,4 +1,4 @@
-# Drawerly
+# Drawerful
 
 Organizador de escritorio para Windows, hecho en Rust. Agrupa programas, carpetas y archivos en **cajones** compactos: cada cajón es un pequeño icono en el escritorio que se despliega al pasar el mouse o al hacer clic, y vuelve a guardarse cuando terminas.
 
@@ -29,7 +29,7 @@ Organizador de escritorio para Windows, hecho en Rust. Agrupa programas, carpeta
 
 ## Instalación
 
-Descarga `drawerly.exe` desde [Releases](../../releases) y ejecútalo. No necesita instalador: aparecerá en la bandeja del sistema (en los iconos ocultos, junto al reloj).
+Descarga `drawerful.exe` desde [Releases](../../releases) y ejecútalo. No necesita instalador: aparecerá en la bandeja del sistema (en los iconos ocultos, junto al reloj).
 
 Para que arranque con Windows: clic derecho en el icono de la bandeja → **Iniciar con Windows**.
 
@@ -49,23 +49,23 @@ Necesitas [Rust](https://rustup.rs) con el toolchain MSVC y las Build Tools de V
 winget install --id Microsoft.VisualStudio.2022.BuildTools -e --override "--quiet --wait --add Microsoft.VisualStudio.Workload.VCTools --includeRecommended"
 winget install --id Rustlang.Rustup -e
 # Reabre la terminal
-git clone https://github.com/Rhezm/drawerly.git
-cd drawerly
+git clone https://github.com/Rhezm/drawerful.git
+cd drawerful
 cargo build --release
 ```
 
-El ejecutable queda en `target\release\drawerly.exe`.
+El ejecutable queda en `target\release\drawerful.exe`.
 
 ## Datos y configuración
 
-Todo se guarda en `%APPDATA%\Drawerly`:
+Todo se guarda en `%APPDATA%\Drawerful`:
 
 | Archivo / carpeta | Contenido |
 |---|---|
 | `config.json` | Configuración y contenido de los cajones |
 | `store\` | Archivos movidos dentro de los cajones (modo *Mover*) |
 | `icons\` | Iconos personalizados ya reducidos |
-| `drawerly.log` | Registro de errores |
+| `drawerful.log` | Registro de errores |
 
 > Si usas el modo *Mover*, no borres la carpeta `store` a mano: ahí están tus archivos. Para devolverlos, quítalos del cajón o elimina el cajón.
 
